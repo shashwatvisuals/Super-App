@@ -3,15 +3,17 @@ import userAvatar from "../assets/userAvatar.png";
 import styles from "./ProfileWidget.module.css";
 
 const ProfileWidget = () => {
+
+  const user = JSON.parse(localStorage.getItem("user")) || {
+    name: "Guest",
+    email: "guest@superapp",
+    username: "Guest User",
+  };
+
   const seletedGeneres =
     JSON.parse(localStorage.getItem("selectedMovies")) || [];
 
-  // Needs to be replaced in the next class
-  const user = {
-    name: "Anurag @Cuvette",
-    email: "anurag@cuvette.tech",
-    username: "Anurag TA",
-  };
+
 
   return (
     <div className={styles.container}>
