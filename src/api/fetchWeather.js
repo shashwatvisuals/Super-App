@@ -3,7 +3,7 @@ import axios from 'axios'
 const BASE_URL = "https://api.weatherapi.com/v1"; // ENDPOINT
 const API_KEY = import.meta.env.VITE_API_WEATHER;
 
-console.log('API Key:', API_KEY);
+// console.log('API Key:', API_KEY);
 
 const CACHE_DURATION = 60 * 60 * 1000;
 
