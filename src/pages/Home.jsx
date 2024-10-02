@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../components/Home.module.css";
+import PropTypes from 'prop-types'
 
 export default function Home() {
   const navigate = useNavigate();
@@ -22,6 +23,13 @@ export default function Home() {
   });
 
   const handleInput = (e) => {
+    handleInput.PropTypes = {
+      name: PropTypes.string,
+      username: PropTypes.string,
+      // email: PropTypes.email,
+      mobile: PropTypes.number,
+      checkbox: PropTypes.bool,
+    }
     setData({
       ...data,
       [e.target.name]:
