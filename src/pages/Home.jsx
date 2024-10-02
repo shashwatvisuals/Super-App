@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../components/Home.module.css";
-import PropTypes from 'prop-types'
 
 export default function Home() {
   const navigate = useNavigate();
@@ -23,13 +22,7 @@ export default function Home() {
   });
 
   const handleInput = (e) => {
-    handleInput.PropTypes = {
-      name: PropTypes.string,
-      username: PropTypes.string,
-      // email: PropTypes.email,
-      mobile: PropTypes.number,
-      checkbox: PropTypes.bool,
-    }
+
     setData({
       ...data,
       [e.target.name]:
@@ -74,7 +67,10 @@ export default function Home() {
       navigate("/selection");
     }
 
+ }
+ const termsAndConditions = () => {
 
+  navigate("/termsAndConditions")
   }
   return (
   <div className={styles.main}>
@@ -150,7 +146,7 @@ export default function Home() {
         <button className={styles.submitButton} type="submit">SIGN UP</button>
       </div>
       <div className={styles.termsAndConditions}>
-        <p>By clicking on Sign up. you agree to Superapp <span className={styles.tc}>Terms and Conditions of Use </span></p>
+        <p>By clicking on Sign up. you agree to Superapp <span onClick={termsAndConditions} className={styles.tc}>Terms and Conditions of Use </span></p>
         <p>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span className={styles.tc}>Privacy Policy </span> </p>
       </div>
     </form>

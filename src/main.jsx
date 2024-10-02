@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Selection from "./pages/MovieSelection.jsx";
 import NotFound from "./pages/404.jsx";
 import CarouselPage from "./pages/CarouselPage";
+import TermsAndConditions from "./pages/TermsAndConditions.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
         <Route path='/browse' element={<Browse />} /> */}
         <Route path='/carousel' element={<CarouselPage />}/>
         <Route path="/selection" element={<Selection />} />
+        <Route path="/termsAndConditions" element={<TermsAndConditions />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -112,7 +112,11 @@ html, body {
 }
 
 .tc {
-    color:#45fa7c
+    color:#45fa7c;
+    cursor: pointer;
+}
+.tc:hover{
+text-decoration: underline;
 }
  
 @media (max-width: 800px) {
