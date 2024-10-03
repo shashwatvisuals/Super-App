@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../components/Home.module.css";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -71,6 +72,10 @@ export default function Home() {
  const termsAndConditions = () => {
 
   navigate("/termsAndConditions")
+  }
+ const handlePolicy = () => {
+
+  navigate("/privacyPolicy")
   }
   return (
   <div className={styles.main}>
@@ -147,7 +152,7 @@ export default function Home() {
       </div>
       <div className={styles.termsAndConditions}>
         <p>By clicking on Sign up. you agree to Superapp <span onClick={termsAndConditions} className={styles.tc}>Terms and Conditions of Use </span></p>
-        <p>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span className={styles.tc}>Privacy Policy </span> </p>
+        <p>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span onClick={handlePolicy} className={styles.tc}>Privacy Policy </span> </p>
       </div>
     </form>
     </div>

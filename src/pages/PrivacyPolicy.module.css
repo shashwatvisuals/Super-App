@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #000000;
+} 
+
+.mainContainer {
+    color: #ffffff;
+    align-items: center;
+}
+
+.privacyPolicyContainer{
+background-color: #505250;
+width: 50vw;
+margin: 0 auto;
+padding: 20px;
+border-radius: 10px;
+}
+
+.privacyPolicyContainer h2{
+margin: 10px;
+color: #0dbc4a;
+}
+.mainContainer h1{
+    margin: 40px;
+    text-align: center;
+}
+
+.gobackButton {
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #0dbc4a;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: #345667 0.3s ease, transform 0.3s ease;
+}
+.gobackButton:hover {
+    background-color: #0ca116;
+    transform: scale(1.1);
+}
