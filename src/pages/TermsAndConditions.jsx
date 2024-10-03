@@ -5,7 +5,7 @@ function TermsAndConditions() {
     const navigate = useNavigate();
     const handleGoBack = () => {
         navigate("/")
-        console.log("you clicked go back...")
+        // console.log("you clicked go back...")
     }
   return (
     <div className={styles.mainContainer}>
